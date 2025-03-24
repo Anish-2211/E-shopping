@@ -36,13 +36,15 @@ const AddProduct = () => {
                 },
                 body: formData,
             }).then((resp)=> resp.json())
-            .then((data)=> {responseData = data});
+            .then((data)=> responseData = data);
+
+            // console.log(responseData)
             
-            if(responseData.success = true){
+            if(responseData.Success){
                 // console.log("hello")
 
                 product.image = responseData.image_url;
-                console.log(product)
+                // console.log(product)
                 await fetch('http://localhost:5007/addproduct',{
                     method:'POST',
                     headers:{

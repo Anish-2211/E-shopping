@@ -25,7 +25,7 @@ const ListProduct = () => {
                 Accept:'application/json',
                 'Content-Type': 'application/json'
             },
-            body:JSON.stringify({id:id})
+            body: JSON.stringify({id:id}),
         })
         await fetchInfo();
     }

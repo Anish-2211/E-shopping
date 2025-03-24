@@ -16,13 +16,16 @@ const ProductPage = () => {
   console.log("daghgds",product)
 
   return (
-    <div>
+    <>
+    {product 
+      ?
+      <div>
       <Breadcrum product={product}/>
       <ProductDisplay product={product} />
       <DescriptionBox />
       <RelatedProducts />
-      
-    </div>
+    </div> : <p>Not Found</p>}
+      </>
   )
 }
 
