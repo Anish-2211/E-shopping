@@ -41,7 +41,7 @@ const LoginSignupPage = () => {
   const signup = async()=>{
     console.log("signup function", formData);
     let responseData;
-    await fetch('http://localhost:5007/signup',{
+    await fetch('https://e-shopping-lhmq.onrender.com/signup',{
       method:'POST',
       headers:{
         Accept:"application/form-data",
