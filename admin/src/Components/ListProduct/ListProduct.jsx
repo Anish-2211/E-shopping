@@ -8,7 +8,7 @@ const ListProduct = () => {
 
 
     const fetchInfo = async()=>{
-        await fetch('http://localhost:5007/allproducts')
+        await fetch('https://e-shopping-lhmq.onrender.com/allproducts')
         .then((res)=> res.json())
         .then((data)=> setAllProducts(data));
     }
@@ -19,7 +19,7 @@ const ListProduct = () => {
 
 
     const removeProduct = async(id)=>{
-        await fetch('http://localhost:5007/removeproduct',{
+        await fetch('https://e-shopping-lhmq.onrender.com/removeproduct',{
             method:'POST',
             headers:{
                 Accept:'application/json',
